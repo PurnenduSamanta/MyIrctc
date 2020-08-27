@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="parent" prefHeight="775.0" prefWidth="1250.0" style="-fx-background-color: #55efc4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="138.0" layoutY="39.0" prefHeight="58.0" prefWidth="604.0" text="             Welcome To MyIrctc" textFill="#341f97db">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="184.0" text="How would you like to proceed?">
+         <font>
+            <Font name="Lucida Bright Demibold" size="22.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5803921818733215" blue="0.19607843458652496" opacity="0.8600000143051147" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <RadioButton fx:id="rb1" layoutX="277.0" layoutY="278.0" mnemonicParsing="false" onAction="#FindingRoute" text="Finding Routes By Train NO">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9921568632125854" green="0.6549019813537598" blue="0.8745098114013672" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></RadioButton>
+      <RadioButton fx:id="rb2" layoutX="277.0" layoutY="378.0" mnemonicParsing="false" onAction="#FindingTrainBetweenStations" text="Finding Train Between two Stations">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8509804010391235" green="0.501960813999176" blue="0.9803921580314636" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></RadioButton>
+   </children>
+</AnchorPane>

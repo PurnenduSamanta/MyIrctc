@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1267.0" prefWidth="1263.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TrainRoutes">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1254.0" prefWidth="1316.0" style="-fx-background-color: #ced6e0;">
+         <children>
+            <Label layoutX="409.0" layoutY="25.0" prefHeight="45.0" prefWidth="318.0" text="    Enter Your Train No">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font></Label>
+            <TextField fx:id="tn" layoutX="494.0" layoutY="83.0" prefHeight="21.0" prefWidth="147.0" />
+            <Button fx:id="proceed" layoutX="540.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#ValidateTrainSearch" text="Proceed" textFill="#32169e" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Bodoni MT Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="result" layoutX="406.0" layoutY="180.0" />
+            <Label fx:id="ft" layoutX="429.0" layoutY="162.0" textFill="#c23616" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
